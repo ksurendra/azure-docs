@@ -10,11 +10,11 @@ editor: ''
 ms.assetid: d799c1c6-75eb-4b8a-9f94-bf4f3dadf4c3
 ms.service: service-fabric
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: na
 ms.date: 07/02/2017
-ms.author: mfussell;mikhegn
+ms.author: mfussell
 
 ---
 # Package and deploy an existing executable to Service Fabric
@@ -164,7 +164,9 @@ In the preceding example, the SetupEntryPoint runs a batch file called `LaunchCo
 </EntryPoint>
 ```
 
-The `EntryPoint` element in the service manifest file is used to specify how to launch the service. The `ExeHost` element specifies the executable (and arguments) that should be used to launch the service.
+The `EntryPoint` element in the service manifest file is used to specify how to launch the service.
+
+The `ExeHost` element specifies the executable (and arguments) that should be used to launch the service. You can optionally add the `IsExternalExecutable="true"` attribute to `ExeHost` to indicate that the program is an external executable outside of the code package. For example, `<ExeHost IsExternalExecutable="true">`.
 
 * `Program` specifies the name of the executable that should start the service.
 * `Arguments` specifies the arguments that should be passed to the executable. It can be a list of parameters with arguments.

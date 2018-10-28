@@ -81,7 +81,7 @@ $probe = New-AzureRmLoadBalancerProbeConfig `
   ```
 
 ### Create a load balancer rule
-A load balancer rule is used to define how traffic is distributed to the VMs. You define the front-end IP configuration for the incoming traffic and the back-end IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
+A load balancer rule is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic, along with the required source and destination port. To make sure only healthy VMs receive traffic, you also define the health probe to use.
 
 Create a load balancer rule with [Add-AzureRmLoadBalancerRuleConfig](/powershell/module/azurerm.network/add-azurermloadbalancerruleconfig). The following example creates a load balancer rule named *myLoadBalancerRule* and balances traffic on *TCP* port *80*:
 
@@ -201,7 +201,7 @@ $nsg = New-AzureRmNetworkSecurityGroup`
 -SecurityRules $rule1,$rule2
 ```
 
-###Create NICs
+### Create NICs
 Create virtual NICs created with [New-AzureRmNetworkInterface](/powershell/module/azurerm.network/new-azurermnetworkinterface). The following example creates two virtual NICs. (One virtual NIC for each VM you create for your app in the following steps). You can create additional virtual NICs and VMs at any time and add them to the load balancer:
 
 ```azurepowershell-interactive
@@ -327,4 +327,8 @@ Remove-AzureRmResourceGroup -Name myResourceGroupLB
 ```
 
 ## Next steps
-- [Learn more about Azure Load Balancer](load-balancer-overview.md)
+
+In this quickstart, you created a Basic Load Balancer, attached VMs to it, configured the load balancer traffic rule, health probe, and then tested the load balancer. To learn more about Azure Load Balancer, continue to the tutorials for Azure Load Balancer.
+
+> [!div class="nextstepaction"]
+> [Azure Load Balancer tutorials](tutorial-load-balancer-basic-internal-portal.md)

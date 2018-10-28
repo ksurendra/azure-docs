@@ -1,17 +1,18 @@
 ---
-title: What is Bing Autosuggest? | Microsoft Docs
+title: What is Bing Autosuggest?
+titlesuffix: Azure Cognitive Services
 description: Learn how to use the Bing Autosuggest API.
 services: cognitive-services
 author: swhite-msft
-manager: ehansen
-ms.assetid: 6F4AFEDA-71A7-48C1-B3E2-D0D430428CDC
+manager: cgronlun
+
 ms.service: cognitive-services
 ms.component: bing-autosuggest
 ms.topic: overview
 ms.date: 09/12/2017
 ms.author: scottwhi
 ---
-# What is Bing Autosuggest API?
+# What is Bing Autosuggest?
 
 If you send queries to any of the Bing Search APIs, you can use the Bing Autosuggest API to improve your search box experience. The Bing Autosuggest API returns a list of suggested queries based on the partial query string the user enters in the search box. Display the suggestions in the search box's drop-down list. The suggested terms are based on suggested queries that other users have searched on and user intent.
 

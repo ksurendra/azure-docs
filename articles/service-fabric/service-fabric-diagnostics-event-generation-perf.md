@@ -10,11 +10,11 @@ editor: ''
 ms.assetid:
 ms.service: service-fabric
 ms.devlang: dotnet
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: NA
 ms.date: 04/16/2018
-ms.author: dekapur; srrengar
+ms.author: srrengar
 ---
 
 # Performance metrics
@@ -80,4 +80,4 @@ If you use Reliable Collections, we recommend adding the `Avg. Transaction ms/Co
 ## Next steps
 
 * Learn more about [event generation at the platform level](service-fabric-diagnostics-event-generation-infra.md) in Service Fabric
-* Collect performance metrics through [OMS Agent](service-fabric-diagnostics-oms-agent.md)
+* Collect performance metrics through [Log Analytics agent](service-fabric-diagnostics-oms-agent.md)
